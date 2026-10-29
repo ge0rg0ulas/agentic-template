@@ -1,0 +1,5 @@
+{
+  "name": "World-Class Systems & Math Sandbox",
+  "build": { "dockerfile": "../Dockerfile" },
+  "postCreateCommand": "make setup && make verify"
+}
