@@ -1,0 +1,11 @@
+name: Deterministic Oracle CI
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install C++20 & System Tools
+        run: sudo apt-get update && sudo apt-get install -y clang build-essential
+      - name: Setup & Run Deterministic Oracle
+        run: make setup && make verify

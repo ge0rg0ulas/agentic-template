@@ -4,5 +4,15 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .hypothesis/
-.env
 *.pyc
+build/
+target/
+obj_dir/
+*.o
+*.out
+*.so
+*.a
+*.vcd
+*.fst
+.env
+.DS_Store
